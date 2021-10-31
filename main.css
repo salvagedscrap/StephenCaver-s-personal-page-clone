@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+html{
+    font-size: 16;
+}
+
+
+body{
+    background-color: #FEF8DD;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+header{
+  
+    display: flex;
+}
+
+.logo{
+    width:20%;
+    padding: 1rem;
+    padding-left: 2rem;
+    color: #E5734C;
+}
+nav{
+    width: 80%;
+    margin-left: auto;
+    text-align: right;
+}
+
+ul{ 
+    
+ 
+}
+ul li{
+    display:inline-block;
+    border-left: solid 1px #E5734C;
+    padding: .4rem;
+}
+ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    color: #333;
+    margin: 1rem 2rem;
+    transition: all 1s;
+   
+
+}
+ul li:hover{
+    border-left: solid 3px #E5734C
+}
+
+
+
+main{
+    margin-top: 5rem;
+    
+}
+.main-top{
+    display: flex;
+}
+.main-text{
+    width: 50%;
+    padding: 2rem;
+    z-index: 1;
+
+}
+.main-img{
+    height: 90%;
+    width: 50%;
+    padding: 1rem;
+  
+}
+.main-img img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.main-text h1{
+    color: #E5734C;
+    font-size: 12rem;
+    text-align: right;
+
+}
+.main-text-content{
+    width: 60%;
+    margin: 2rem auto;
+    text-align: justify;
+}
+
+
+.main-text-content h2{
+    font-size: 2rem;
+    color: #333;
+    margin: 2rem 0;
+    text-align: left;
+    
+}
+.main-text-content p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .8px;
+    color: #333;
+    margin: 1rem 0;
+}
+.recent-posts{
+    margin: 5rem 0;
+}
+.recent-post-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5rem auto;
+    width: 80%;
+
+   
+}
+.div-header{
+    display: inline-block;
+    background-color: #E5734C;
+    color: #FEF8DD;
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 4rem;
+    margin: 5rem 0;
+}
+.recent-post-card{
+    width: 25%;
+    margin: 1rem 2rem ;
+}
+h3 a{
+    text-decoration: none;
+    color: #E5734C;
+    transition: all .4s;
+    font-size: 1.5rem;
+  
+}
+ h3 a:hover{
+    color: #333;
+}
+
+.recent-post-card h3{
+    margin: 1rem 0;
+    
+}
+
+.recent-post-card p{
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+.date{
+    font-size: .8rem;
+}
+
+.portfolio-card{
+    display: inline-block;
+    width: 18%;
+    margin: 2rem 1rem;
+}
+
+.portfolio-cards{
+    display: flex;
+    margin: 5rem 2rem;
+    
+}
+
+footer{
+    padding: 2rem;
+    background-color: #E5734C;
+    color: #FEF8DD;
+    text-align: center;
+}
+
+@media  (max-width:950px){
+
+    html{
+        font-size: 14;
+    }
+    .main-top{
+        display:block;
+    }
+    .main-text{
+        width: 100%;
+        padding: 2rem;
+        z-index: 1;
+    
+    }
+    .main-text-content{
+        width: 100%;
+    }
+    .main-img{
+        width: 100%;
+    }
+    .recent-posts{
+        margin: 2rem 0
+    }
+    .recent-post-cards{
+        width: 100%;
+        display: block;
+    }
+    .recent-post-card{
+        width: 100%;
+        display: inline-block;
+        margin: 2rem 0;
+
+    }
+    .portfolio-cards{
+        display: block;
+    }
+    .portfolio-card{
+        width:45%;
+        display: inline-block;
+        
+    }
+
+}
+@media (max-width:550px){
+    html{
+        font-size: 12px;
+    }
+    nav ul li a{
+        font-size: 1rem ;
+    }
+    .portfolio-card{
+        display: block;
+        width:100%;
+    }
+    .portfolio-cards{
+        display: block;
+    }
+}
